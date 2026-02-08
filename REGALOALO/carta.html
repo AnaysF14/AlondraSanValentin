@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Alondra</title>
+    <link rel="stylesheet" href="carta-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@300;400&family=Playfair+Display:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="animated-bg" id="particles-container"></div>
+
+    <div class="main-view">
+        <div class="envelope-wrapper" id="envelope" onclick="openMechanism()">
+            <div class="envelope">
+                <div class="flap"></div>
+                <div class="body-front">
+                    <span class="recipient">Para: Alondra</span>
+                </div>
+            </div>
+            
+            <div class="letter-modal" id="letter">
+                <div class="book" id="book">
+                    
+                    <div class="book-page" id="page2">
+                        <div class="page-side left-side">
+                            <div class="text-content">
+                                <p>Eres una persona increíblemente especial, admiro tu fuerza y resiliencia.</p>
+                                <p>Gracias por dejarme ser parte de tu vida y por brindarme tu confianza.</p>
+                                <p>Ojalá todos tengan en su vida una amiga tan linda como tú.</p>
+                                <p>Quererte es muy fácil, tu amistad hace más fácil mi vida.</p>
+                                <p>Hay personas que son los verdaderos regalos, lo confirmo contigo.</p>
+                            </div>
+                        </div>
+                        <div class="page-side right-side">
+                            <div class="text-content">
+                                <p>Espero que este detalle te saque una sonrisa, porque te lo mereces todo.</p>
+                                <p>Siempre estaré aquí para apoyarte y escucharte.</p>
+                                <p>Espero tener muchos momentos y aventuras junto a ti.</p>
+                                <p>Siempre tendrás un lugar en mi corazón, estés o no en mi vida.</p>
+                                <p class="signature">Te quiero ❤️</p>
+                                <button class="close-btn" onclick="closeLetter(event)">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-page" id="page1">
+                        <div class="page-side left-side">
+                            <div class="photo-frame">
+                                <img src="foto.jpeg" alt="Nosotros">
+                            </div>
+                        </div>
+                        <div class="page-side right-side flippable" id="flippingPage">
+                            <div class="front-face">
+                                <div class="text-content">
+                                    <h2>Hola, guapa</h2>
+                                    <p>El poder coincidir contigo fue inesperado, pero conectar contigo es lo mejor que me ha pasado.</p>
+                                    <p>Cada momento contigo es increíble, disfruto mucho tu compañía, eres una amiga maravillosa.</p>
+                                    <p>A pesar del poco tiempo, eres alguien importante en mi vida.</p>
+                                    <button class="next-btn" onclick="flipPage(event)">Siguiente →</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> </div> </div> </div> <div class="final-surprise" id="finalSurprise">
+        <div class="heart-container">
+            <svg viewBox="0 0 120 120" class="heart-svg">
+                <defs>
+                    <radialGradient id="heartGrad" cx="50%" cy="40%" r="50%">
+                        <stop offset="0%" stop-color="#ff4d6d" />
+                        <stop offset="70%" stop-color="#ff0a54" />
+                        <stop offset="100%" stop-color="#800f2f" />
+                    </radialGradient>
+                </defs>
+                <path d="M60 100 C 30 80 5 55 5 35 A 25 25 0 0 1 55 35 A 25 25 0 0 1 115 35 C 115 55 90 80 60 100 Z" fill="url(#heartGrad)" />
+            </svg>
+            <span class="heart-name">Alondra</span>
+        </div>
+        <h3 class="glow-text">TU AMISTAD ES UN PRIVILEGIO</h3>
+    </div>
+
+    <script src="carta-script.js"></script>
+</body>
+</html>
