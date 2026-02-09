@@ -271,4 +271,34 @@ body {
         transform: translateY(-110vh) rotate(360deg);
         opacity: 0;
     }
+
+}
+
+
+/* --- RESPONSIVE INICIO --- */
+@media (max-width: 600px) {
+    .glass-card {
+        width: 85%;
+        padding: 2rem 1.5rem;
+    }
+
+    .floating {
+        font-size: 2.8rem; /* Título más pequeño en móvil */
+    }
+
+    .button-group {
+        flex-direction: column; /* Botones uno arriba del otro */
+        gap: 15px;
+        align-items: center;
+    }
+
+    .btn-main, .btn-secondary {
+        width: 100%; /* Botones a lo ancho del contenedor */
+        max-width: 250px;
+    }
+
+    .hidden-message {
+        font-size: 1.5rem; /* Frase secreta ajustable */
+        line-height: 1.2;
+    }
 }
